@@ -1,0 +1,105 @@
+main {
+  display: flex;
+  justify-content: center;
+
+  mat-card {
+    display: flex;
+    flex-direction: column;
+    border: 2px solid black;
+    border-radius: 10px;
+    width: 520px;
+
+    .hero {
+      img {
+        height: 200px;
+      }
+    }
+
+    h1 {
+      text-align: center;
+    }
+
+    p {
+      width: 300px;
+      margin-top: -10px;
+      margin-left: 20%;
+      margin-bottom: 20px;
+      line-height: 1.4;
+      text-align: center;
+    }
+
+    .annual-plan {
+      display: flex;
+      flex-direction: row;
+      background-color: #f8f9fe;
+      border-radius: 8px;
+      margin-bottom: 40px;
+      height: 100px;
+
+      .music-icon {
+        display: grid;
+
+        img {
+          width: 80px;
+          height: 80px;
+          margin-left: 30px;
+          align-self: center;
+        }
+      }
+
+      .plan {
+        padding-left: 30px;
+        display: flex;
+        flex-direction: column;
+        align-self: center;
+        margin-top: -20px;
+
+        span {
+          margin-top: -20px;
+        }
+      }
+
+      .change {
+        padding-left: 150px;
+        align-self: center;
+
+        a {
+          cursor: pointer;
+
+          &:hover {
+            color: turquoise;
+          }
+        }
+      }
+    }
+
+    button {
+      border-radius: 10px;
+      background-color: #382ae1;
+      margin-bottom: 20px;
+      height: 40px;
+      color: white;
+      cursor: pointer;
+      font-weight: 900;
+    }
+  }
+
+  .attribution {
+    grid-area: footer;
+    font-size: 11px;
+    color: black;
+    position: fixed;
+    bottom: 0;
+    left: 37.5%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+
+    a {
+      color: hsl(228, 45%, 44%);
+
+      &:hover {
+        color: turquoise;
+      }
+    }
+  }
+}
